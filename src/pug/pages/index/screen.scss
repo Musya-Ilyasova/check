@@ -1,0 +1,42 @@
+.second-screen {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 362px;
+    height: 284px;
+    background: url(../img/back.png) no-repeat;
+    background-size: contain;
+  }
+  .btn {
+    margin-top: 13vh;
+  }
+}
+
+.third-screen  {
+  .circle {
+    width: 276px;
+    height: 276px;
+    background: #FFE600;
+    margin: auto auto 0;
+    border-radius: 50%;
+  }
+  &__title {
+    margin-top: auto;
+  }
+  &__progress {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: $white;
+
+  }
+  &__process {
+    padding: 10px 0;
+    margin: 10px 0 82px;
+    border-top: 1px solid rgba($color: $white, $alpha: 0.1);
+  }
+}

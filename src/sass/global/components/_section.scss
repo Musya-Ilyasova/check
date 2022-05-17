@@ -1,0 +1,33 @@
+.section {
+  height: 100vh;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    width: 135px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  &-icon {
+    height: 74px;
+    width: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    align-self: flex-end;
+    margin-top: auto;
+    .icon {
+      width: 102%;
+      height: 102%;
+    }
+  }
+
+}

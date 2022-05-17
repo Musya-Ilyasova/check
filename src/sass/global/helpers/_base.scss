@@ -19,9 +19,9 @@ html {
 body {
   font-family: $font-family-main;
   font-size: $font-size-main;
-  line-height: 1.2;
+  line-height: 1.6;
   font-weight: 400;
-  color: $black;
+  color: $text;
   //Flexbox
   display: flex;
   flex-flow: column;
@@ -29,6 +29,9 @@ body {
   overflow-anchor: auto;
   scroll-behavior: smooth;
   text-rendering: auto; 
+  background: $back;
+  text-align: center;
+
 
   /*&::-webkit-scrollbar {
     background-color: $gray-dark;
