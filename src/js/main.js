@@ -3,5 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
   @@include('modules/polyfills.js');
   @@include('modules/modal.js');
   @@include('modules/circle.js');
+  @@include('modules/timer.js');
   @@include('modules/btn.js');
 });

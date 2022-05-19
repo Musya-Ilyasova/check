@@ -1,0 +1,61 @@
+.pay-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  &__title {
+    margin-bottom: 12px;
+  }
+  label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  &-item {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  &-group {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-column-gap: 11px;
+  }
+  &__input {
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: $darkenBack;
+    box-shadow: 0px 1px 0px rgba($white, 0.15);
+    padding: 0 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $white;
+    &::placeholder {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  .btn_apple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: $white;
+    background: $black;
+    line-height: 23px;
+    margin-bottom: 0;
+
+    .icon {
+      width: 19px;
+      height: 23px;
+      margin-right: 12px;
+    }
+  }
+  .btn_pay {
+    margin-top: 16px;
+  }
+}
