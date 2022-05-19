@@ -1,3 +1,10 @@
+.first-screen {
+  display: block;
+  .btn {
+    margin-top: 13vh;
+  }
+
+}
 .second-screen {
   &:before {
     content: "";
@@ -18,25 +25,97 @@
 
 .third-screen  {
   .circle {
-    width: 276px;
-    height: 276px;
-    background: #FFE600;
-    margin: auto auto 0;
-    border-radius: 50%;
-  }
-  &__title {
-    margin-top: auto;
+    width: 290px;
+    height: 290px;
+    margin: auto auto 5vh;
+    transform: rotate(-90deg);
+    position: relative;
+    circle {
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 1s linear;
+      stroke: $darkenBack;
+      stroke-width: 37px;
+    }
+    .bar {
+      stroke: $main;
+    }
+    .shadow {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      border-radius: 50%;
+      transform: translate(0%,-50%);
+      box-shadow: inset -1px -1px 0px rgba(255, 255, 255, 0.15);
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 198px;
+        height: 198px;
+        border-radius: 50%;
+        transform: translate(0%,-50%);
+        box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.15);
+        z-index: 100;
+      }
+      &-big {
+        width: 214px;
+        height: 214px;
+        &:after {
+          width: 198px;
+          height: 198px;
+        }
+      }
+      &-middle {
+        width: 123px;
+        height: 123px;
+        &:after {
+          width: 107px;
+          height: 107px;
+        }
+      }
+      &-small {
+        width: 30px;
+        height: 30px;
+        &:after {
+          display: none;
+        }
+      }
+    }
+    svg {
+      &:not(:first-child) {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translate(0%,-50%);
+        border-radius: 50%;
+      }
+      &:nth-child(2) {
+        width: 286px;
+        height: 286px;
+
+      }
+      &:nth-child(3) {
+        width: 187px;
+        height: 187px;
+      }
+    }
   }
   &__progress {
     font-weight: 600;
     font-size: 30px;
     line-height: 37px;
     color: $white;
-
   }
   &__process {
     padding: 10px 0;
-    margin: 10px 0 82px;
+    margin: 10px 0 10vh;
     border-top: 1px solid rgba($color: $white, $alpha: 0.1);
   }
 }

@@ -1,0 +1,53 @@
+.modal {
+  &__wrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba($color: $back, $alpha: 0.9);
+    &.active {
+      display: flex;
+    }
+  }
+  &__container {
+    background: rgba($color: $lightBack, $alpha: 1.0);
+    width: 279px;
+    padding: 32px;
+    padding-bottom: 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+  &__title {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-size: 15px;
+    margin: 16px 0;
+  }
+  &-btn {
+    width: 50%;
+    height: 48px;
+    background: transparent;
+    transition: background 0.2s ease-in-out;
+    font-weight: 600;
+    font-size: 15px;
+    color: $white;
+    cursor: pointer;
+    &-panel {
+      display: flex;
+      width: calc(100% + 64px);
+      transform: translateX(-32px);
+      border-top: 1px solid rgba(91, 95, 111, 0.25);
+    }
+    &:hover {
+      background: rgba($color: $white, $alpha: 0.1);
+      box-shadow: none;
+    }
+  }
+}
