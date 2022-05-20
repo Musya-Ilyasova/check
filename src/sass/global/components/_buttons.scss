@@ -11,6 +11,14 @@
   text-transform: uppercase;
   font-size: 17px;
   cursor: pointer;
-  margin-bottom: 28px;
+  margin-bottom: 41px;
   margin-top: auto;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background: var(--btnHover);
+    outline: none;
+  }
+  &:focus {
+    box-shadow: none;
+  }
 }

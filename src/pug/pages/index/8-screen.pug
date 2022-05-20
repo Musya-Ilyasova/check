@@ -30,7 +30,7 @@ section.section.eight-screen(data-remove="8" data-section="5")
           span 4.85 Global Raiting
         .right
           +icon('branch')
-      button.btn full protect only 1$
+      //- button.btn full protect only 1$
     .eight-screen-offer
       h2.eight-screen__title
         span.main PERSONAL OFFER
@@ -57,27 +57,24 @@ section.section.eight-screen(data-remove="8" data-section="5")
             span.price 9.85$
     .pay-form__wrapper
       h2.pay-form__title Pay safly
-      form.pay-form(action="")
+      .pay-form
         .pay-form-item
-          label(for="emailPAy") Email
-          input.pay-form__input#emailPAy(type="email", name="email" placeholder="your e-mail")
+          span.label Email
+          .pay-form__input#emailPAy(type="email", name="email" placeholder="your e-mail")
         .pay-form-item
-          label(for="cardPAy") Credit card
-          input.pay-form__input#cardPAy(type="number", name="cardNumber" placeholder="card number")
+          span.label Credit card
+          .pay-form__input#cardPAy(type="number", name="cardNumber" placeholder="card number")
         .pay-form-group
           .pay-form-item
-            label(for="datePAy") Expires on
-            input.pay-form__input#datePAy(type="number", name="datePay" placeholder="00 / 00")
+            span.label Expires on
+            .pay-form__input#datePAy(type="number", name="datePay" placeholder="00 / 00")
           .pay-form-item
-            label(for="cvcPAy") CVV / CVC
-            input.pay-form__input#cvcPAy(type="number", name="CVC" placeholder="CVC")
+            span.label CVV / CVC
+            .pay-form__input#cvcPAy(type="number", name="CVC" placeholder="CVC")
         button.btn.btn_apple
           +icon('apple')
           | pay
-        button.btn.btn_pay pay 1$ with credit card!
-
-
-
+    button.btn.btn_pay pay 1$ with credit card!
     .eight-screen-footer
       p  *Your 7-Day Trial will last until May 24, 2022. You can cancel at anytime before then and will not be charged the full program amount.
 

@@ -5,7 +5,7 @@
   &__title {
     margin-bottom: 12px;
   }
-  label {
+  .label {
     display: block;
     font-size: 12px;
     margin-bottom: 12px;
@@ -38,6 +38,9 @@
       text-align: center;
       text-transform: uppercase;
       opacity: 0.25;
+    }
+    &[valid=false] {
+      box-shadow: 0 10px 20px rgba(248, 84, 84, 0.25);
     }
   }
   .btn_apple {

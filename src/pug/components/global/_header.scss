@@ -23,16 +23,16 @@
       text-align: center;
       font-weight: 700;
       font-size: 20px;
-      color: rgba($color: var(--headerItem), $alpha: 0.25);
+      color: var(--headerItem);
       background-color: var(--darkenBack);
       border-radius: 50%;
       box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15);
       &.check {
-        color: rgba($color: var(--headerCheck), $alpha: 1);
+        color: var(--headerCheck);
       }
       &.active {
         background: var(--main);
-        color: var(--headerCheck);
+        color: var(--headerActive);
       }
     }
     &__line {

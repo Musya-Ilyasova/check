@@ -14,28 +14,36 @@ $main: #FFE600;
 $text: rgba(255, 255, 255, 0.75);
 $btn: #2C2C32;
 $trial: #5B5F6F;
-// $headerItem: rgba;
 $title: $white;
 
 
 :root {
-  --black: #000;
-  --white: #fff;
+  --black: #000000;
+  --white: #FFFFFF;
   --back: #252C3E;
   --darkenBack: #171D2D;
   --lightBack: #303951;
   --main: #FFE600;
   --text: rgba(255, 255, 255, 0.75);
   --btn: #2C2C32;
+  --btnHover: #ffea22; 
   --trial: #5B5F6F;
-  --title: #fff;
+  --title: #FFFFFF;
   --line: rgba(255, 255, 255, 0.1);
-  --headerItem: rgba($color:#fff, $alpha:0.25);
-  --headerCheck: #2C2C32;
-  --modalBack: rgba($color: #252C3E, $alpha: 0.9);
-  --br: rgba($color: #ffffff, $alpha: 0.1);
+  --headerItem: rgba(255, 255, 255,0.25);
+  --headerCheck: #FFFFFF;
+  --headerActive: #2C2C32;
+  --modalBack: rgba(37, 44, 62, 0.9);
+  --br: rgba(255, 255, 255, 0.1);
   --footer: rgba(255, 255, 255, 0.75);
-  --eightHeader: #000;
+  --eightHeader: #000000;
+  --branch: #FFFFFF;
+  --mark: #FFE600;
+  --bug: rgba(255, 255, 255, 0.3);
+  --bugBack: url(../img/back.png) no-repeat;
+  --bigC:#FFE600;
+  --middleC:#FFE600;
+  --smallC:#FFE600;
 }
 
 .index-white {
@@ -43,17 +51,26 @@ $title: $white;
   --darkenBack: #E8ECF0;
   --lightBack: #FFFFFF;
   --main: #007AFF;
-  --text: #000;
+  --text: #000000;
   --btn: #FFFFFF;
+  --btnHover: #0062cc;
   --rial: #5B5F6F;
   --title: #04192F;
   --line: rgba(4, 25, 47, 0.1);
-  // --headerItem: rgba($color:#04192f, $alpha:0.25)
-  --headerCheck: $btn;
+  --headerItem: rgba(4, 25, 47,0.25);
+  --headerCheck: #04192F;
+  --headerActive: #FFFFFF;
   --modalBack:  rgba(4, 22, 47, 0.4);
   --br: rgba(4, 25, 47, 0.1);
   --footer: rgba(4, 25, 47, 0.75);
-  --eightHeader: #fff;
+  --eightHeader: #FFFFFF;
+  --branch: #D3DDE8;
+  --mark: #FFCC00;
+  --bug: #D3DDE8;
+  --bugBack: url(../img/back-white.png) no-repeat;
+  --bigC:#007AFF;
+  --middleC:#2EA2FD;
+  --smallC:#5AC8FA;
 }
 
 $breakpoints: ("320": 320px, "768": 768px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px);

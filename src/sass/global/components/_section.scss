@@ -29,7 +29,10 @@
     .icon {
       width: 102%;
       height: 102%;
+      fill: var(--bug);
+      &-mark {
+        fill: var(--mark);
+      }
     }
   }
-
 }
