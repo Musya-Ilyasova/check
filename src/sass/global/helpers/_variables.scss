@@ -14,7 +14,47 @@ $main: #FFE600;
 $text: rgba(255, 255, 255, 0.75);
 $btn: #2C2C32;
 $trial: #5B5F6F;
+// $headerItem: rgba;
+$title: $white;
 
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --back: #252C3E;
+  --darkenBack: #171D2D;
+  --lightBack: #303951;
+  --main: #FFE600;
+  --text: rgba(255, 255, 255, 0.75);
+  --btn: #2C2C32;
+  --trial: #5B5F6F;
+  --title: #fff;
+  --line: rgba(255, 255, 255, 0.1);
+  --headerItem: rgba($color:#fff, $alpha:0.25);
+  --headerCheck: #2C2C32;
+  --modalBack: rgba($color: #252C3E, $alpha: 0.9);
+  --br: rgba($color: #ffffff, $alpha: 0.1);
+  --footer: rgba(255, 255, 255, 0.75);
+  --eightHeader: #000;
+}
+
+.index-white {
+  --back: #FFFFFF;
+  --darkenBack: #E8ECF0;
+  --lightBack: #FFFFFF;
+  --main: #007AFF;
+  --text: #000;
+  --btn: #FFFFFF;
+  --rial: #5B5F6F;
+  --title: #04192F;
+  --line: rgba(4, 25, 47, 0.1);
+  // --headerItem: rgba($color:#04192f, $alpha:0.25)
+  --headerCheck: $btn;
+  --modalBack:  rgba(4, 22, 47, 0.4);
+  --br: rgba(4, 25, 47, 0.1);
+  --footer: rgba(4, 25, 47, 0.75);
+  --eightHeader: #fff;
+}
 
 $breakpoints: ("320": 320px, "768": 768px, "1024": 1024px, "1280": 1280px, "1440": 1440px, "1600": 1600px);
 //width container

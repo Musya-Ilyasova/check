@@ -28,15 +28,16 @@
     line-height: 60px;
     border: none;
     border-radius: 8px;
-    background-color: $darkenBack;
+    background-color: var(--darkenBack);
     box-shadow: 0px 1px 0px rgba($white, 0.15);
     padding: 0 20px;
     font-weight: 800;
     text-transform: uppercase;
-    color: $white;
+    color: var(--title);
     &::placeholder {
       text-align: center;
       text-transform: uppercase;
+      opacity: 0.25;
     }
   }
   .btn_apple {

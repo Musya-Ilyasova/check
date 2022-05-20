@@ -6,19 +6,21 @@
     display: none;
     align-items: center;
     justify-content: center;
-    background: rgba($color: $back, $alpha: 0.9);
+    background: var(--modalBack);
     &.active {
       display: flex;
     }
   }
   &__container {
-    background: rgba($color: $lightBack, $alpha: 1.0);
+    background: var(--lightBack);
+    z-index: 100;
     width: 279px;
     padding: 32px;
     padding-bottom: 0;
     border-radius: 20px;
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15);
     overflow: hidden;
+    position: relative;
   }
   &__title {
     font-weight: 800;
@@ -37,7 +39,7 @@
     transition: background 0.2s ease-in-out;
     font-weight: 600;
     font-size: 15px;
-    color: $white;
+    color: var(--title);
     cursor: pointer;
     &-panel {
       display: flex;
@@ -48,6 +50,9 @@
     &:hover {
       background: rgba($color: $white, $alpha: 0.1);
       box-shadow: none;
+    }
+    &:first-child {
+      border-right: 1px solid rgba(91, 95, 111, 0.25);
     }
   }
 }

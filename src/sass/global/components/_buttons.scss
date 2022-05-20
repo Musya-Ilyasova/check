@@ -3,10 +3,10 @@
   width: 100%;
   height: 60px;
   line-height: 60px;
-  background: #FFE600;
+  background: var(--main);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25), inset 0px 1px 0px rgba(255, 255, 255, 0.25);
   border-radius: 8px;
-  color: $btn;
+  color: var(--btn);
   font-weight: 800;
   text-transform: uppercase;
   font-size: 17px;

@@ -4,11 +4,11 @@ h1, h2 {
   font-weight: 900;
   line-height: 1.2;
   text-transform: uppercase;
-  color: $white;
+  color: var(--title);
 }
 
 .main {
-  color: $main;
+  color: var(--main);
   display: block;
 }
 p {

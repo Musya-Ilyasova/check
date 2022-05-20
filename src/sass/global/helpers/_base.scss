@@ -21,15 +21,15 @@ body {
   font-size: $font-size-main;
   line-height: 1.6;
   font-weight: 400;
-  color: $text;
+  color: var(--text);
   //Flexbox
   display: flex;
   flex-flow: column;
   min-height: 100vh;
   overflow-anchor: auto;
   scroll-behavior: smooth;
-  text-rendering: auto; 
-  background: $back;
+  text-rendering: auto;
+  background: var(--back);
   text-align: center;
 
 
@@ -104,7 +104,7 @@ button {
   background-color: #e4f1fd;
 }
 
-// media for users with vestibular disorders 
+// media for users with vestibular disorders
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -112,4 +112,4 @@ button {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-} 
+}

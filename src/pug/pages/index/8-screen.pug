@@ -1,87 +1,88 @@
-section.section.eight-screen(data-remove="8" data-section="5" style="display: block")
-  .eight-screen-header 
-    p.eight-screen-header__text Your personal offer has been reserved for next 15 minutes
-    .eight-screen-header__timer 
-      span.hours 00
-      span &nbsp;:&nbsp;
-      span.minutes 14
-      span &nbsp;:&nbsp;
-      span.seconds 35
-  .container 
+section.section.eight-screen(data-remove="8" data-section="5")
+  .eight-screen-header
+    .container
+      p.eight-screen-header__text Your personal offer has been reserved for next 15 minutes
+      .eight-screen-header__timer
+        span.hours 00
+        span :
+        span.minutes 14
+        span :
+        span.seconds 35
+  .container
     span.section-icon.eight-screen__mark
       +icon('mark')
-    h2.eight-screen__title protection your device only 
+    h2.eight-screen__title protection your device only
       span.main 45% !
     p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-    .eight-screen-protection 
-      h2.eight-screen__title use our 
+    .eight-screen-protection
+      h2.eight-screen__title use our
         span.main full protection
-      .eight-screen-protection-raiting 
-        .left 
+      .eight-screen-protection-raiting
+        .left
           +icon('branch')
         .center
-          .stars 
+          .stars
             +icon('star')
             +icon('star')
             +icon('star')
             +icon('star')
             +icon('star')
-          span 4.85 Global Raiting 
-        .right 
+          span 4.85 Global Raiting
+        .right
           +icon('branch')
       button.btn full protect only 1$
-    .eight-screen-offer 
-      h2.eight-screen__title 
+    .eight-screen-offer
+      h2.eight-screen__title
         span.main PERSONAL OFFER
-      .eight-screen-offer-timer 
+      .eight-screen-offer-timer
         span.eight-screen-offer-timer__title expireD in
         .eight-screen-offer-timer-panel
-          span.hour-2 00
-          span &nbsp;:&nbsp;
-          span.minut-2 14
-          span &nbsp;:&nbsp;
-          span.second-2 35
-      .eight-screen-offer-price 
-        .eight-screen-offer-price__top 
+          span.hours 00
+          span :
+          span.minutes 14
+          span :
+          span.seconds 35
+      .eight-screen-offer-price
+        .eight-screen-offer-price__top
           span.eight-screen-offer-price__title personal offer!
           span.eight-screen-offer-price__save.main SAVE 90%
-        .eight-screen-offer-price__body 
-          .eight-screen-offer-price__item 
+        .eight-screen-offer-price__body
+          .eight-screen-offer-price__item
             span.trial 7-Day Trial
-            .price 
+            .price
               span.old 39.50$
               span.new 9.85$
-          .eight-screen-offer-price__item 
+          .eight-screen-offer-price__item
             span.total Total Today
             span.price 9.85$
-    .pay-form__wrapper 
+    .pay-form__wrapper
       h2.pay-form__title Pay safly
       form.pay-form(action="")
         .pay-form-item
           label(for="emailPAy") Email
-          input.pay-form__input#emailPAy(type="email", name="email" placeholder="your e-mail") 
+          input.pay-form__input#emailPAy(type="email", name="email" placeholder="your e-mail")
         .pay-form-item
           label(for="cardPAy") Credit card
-          input.pay-form__input#cardPAy(type="number", name="cardNumber" placeholder="card number") 
-        .pay-form-group 
+          input.pay-form__input#cardPAy(type="number", name="cardNumber" placeholder="card number")
+        .pay-form-group
           .pay-form-item
             label(for="datePAy") Expires on
-            input.pay-form__input#datePAy(type="number", name="datePay" placeholder="00 / 00") 
+            input.pay-form__input#datePAy(type="number", name="datePay" placeholder="00 / 00")
           .pay-form-item
             label(for="cvcPAy") CVV / CVC
             input.pay-form__input#cvcPAy(type="number", name="CVC" placeholder="CVC")
-        button.btn.btn_apple 
+        button.btn.btn_apple
           +icon('apple')
           | pay
         button.btn.btn_pay pay 1$ with credit card!
 
 
 
-    .eight-screen-footer 
+    .eight-screen-footer
       p  *Your 7-Day Trial will last until May 24, 2022. You can cancel at anytime before then and will not be charged the full program amount.
 
       p  No question asked, no small print. If you decide GalaxyLine is good for you, on May 24, 2022 you will be charged one payment for **** for your 2 months course
-      p  GalaxyLine will automatically charge your card ****  every 2 months so you don’t lose access to your account. No refunds or credits except if you don’t see results and follow our money-back policy. To cancel, simply let us know by email: 
+      p  GalaxyLine will automatically charge your card ****  every 2 months so you don’t lose access to your account. No refunds or credits except if you don’t see results and follow our money-back policy. To cancel, simply let us know by email:
       ul.eight-screen-footer-links
         li
           a(href="#") support@galaxylineapp.com
