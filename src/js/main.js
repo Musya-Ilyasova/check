@@ -5,4 +5,5 @@ document.addEventListener('DOMContentLoaded', function() {
   @@include('modules/circle.js');
   @@include('modules/timer.js');
   @@include('modules/btn.js');
+  @@include('modules/btn-fixed.js');
 });

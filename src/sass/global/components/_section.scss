@@ -2,7 +2,9 @@
   height: 100vh;
   position: relative;
   display: none;
+  align-items: center;
   overflow: hidden;
+  max-width: 100%;
   &:after {
     content: "";
     position: absolute;

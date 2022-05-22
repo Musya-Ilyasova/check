@@ -1,8 +1,5 @@
 .first-screen {
-  display: block;
-  .btn {
-    margin-top: 13vh;
-  }
+  display: flex;
 }
 .second-screen {
   &:before {
@@ -146,8 +143,15 @@
 }
 
 .eight-screen {
-  height: auto;
+  overflow-y: scroll;
   padding-bottom: 32px;
+  flex-direction: column;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  &::after {
+    display: none;
+  }
   &__mark {
     margin-top: 32px;
   }
@@ -157,17 +161,23 @@
       display: inline-block;
     }
   }
+  .container {
+    height: auto;
+    max-height: 100%;
+  }
   &-header {
     color: var(--eightHeader);
     position: relative;
     background: var(--main);
     padding: 15px 0;
     overflow: hidden;
+    flex-shrink: 0;
     .container {
       align-items: center;
       justify-content: center;
       flex-direction: row;
       flex-wrap: nowrap;
+      overflow: hidden;
     }
     &:before, &:after {
       content: "";
@@ -217,19 +227,11 @@
     p {
       font-size: 12px;
     }
-    // .btn {
-    //   position: sticky;
-    //   bottom: 20px;
-    //   left: 0;
-    //   right: 0;
-    //   margin-top: 34px;
-    //   width: 100%;
-    // }
     &-raiting {
       display: flex;
       align-items: center;
-      padding: 0 40px;
-      margin-top: 16px;
+      justify-content: center;
+      margin: 16px 0 0;
       .left, .right {
         width: 53px;
         height: 53px;
@@ -294,8 +296,11 @@
             font-size: 60px;
           }
           &[class]{
-            width: 77px;
+            width: 67px;
             margin: 0 6px;
+            @media screen and (min-width: 370px) {
+              width: 77px;
+            }
           }
         }
 
@@ -349,6 +354,7 @@
   }
   .pay-form {
     position: relative;
+    top: 20px;
     &::after {
       content: "";
       clear: both;
@@ -362,12 +368,9 @@
   }
 
   .btn_pay {
-    position: sticky;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    margin-top: 20px;
   }
-  
+
   &-footer {
     p {
       font-size: 12px;
@@ -382,6 +385,21 @@
         color: var(--footer);
 
       }
+    }
+  }
+  .btn-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: calc(100% - 64px);
+    max-width: 311px;
+    margin-bottom: 0;
+    z-index: 100;
+    transition: 0.1s ease-in-out;
+    &.hide {
+      transform: translateY(100px);
     }
   }
 }

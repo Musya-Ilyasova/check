@@ -23,7 +23,7 @@ function changePage(header, section, sectionNext) {
   let dataSectionNext = sectionNext.dataset.section;
   let itemH = header.querySelectorAll('.header-list__item[data-item="'+ dataSectionNext + '"]');
   section.style.display = "none";
-  sectionNext.style.display = "block";
+  sectionNext.style.display = "flex";
   if (sectionNext.dataset.remove == '2') {
     header.style.opacity = "1";
     itemH.forEach((item) => item.classList.add("check"));

@@ -30,7 +30,7 @@ section.section.eight-screen(data-remove="8" data-section="5")
           span 4.85 Global Raiting
         .right
           +icon('branch')
-      //- button.btn full protect only 1$
+      a.btn.btn-fixed(href="#pay-form") full protect only 1$
     .eight-screen-offer
       h2.eight-screen__title
         span.main PERSONAL OFFER
@@ -55,7 +55,7 @@ section.section.eight-screen(data-remove="8" data-section="5")
           .eight-screen-offer-price__item
             span.total Total Today
             span.price 9.85$
-    .pay-form__wrapper
+    .pay-form__wrapper#pay-form
       h2.pay-form__title Pay safly
       .pay-form
         .pay-form-item
@@ -74,7 +74,7 @@ section.section.eight-screen(data-remove="8" data-section="5")
         button.btn.btn_apple
           +icon('apple')
           | pay
-    button.btn.btn_pay pay 1$ with credit card!
+        button.btn.btn_pay pay 1$ with credit card!
     .eight-screen-footer
       p  *Your 7-Day Trial will last until May 24, 2022. You can cancel at anytime before then and will not be charged the full program amount.
 

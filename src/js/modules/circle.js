@@ -18,8 +18,9 @@ function startCircle(countC, header, section, sectionNext) {
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
-  
-  let progressRandom=[0,6,1,3,2,5,0,2,1]
+
+  let progressRandom=[0,6,1,3,2,5,0,2,1];
+  let evModal = true;
 
   function start() {
     val+=progressRandom[getRandomInt(progressRandom.length)];
@@ -31,9 +32,10 @@ function startCircle(countC, header, section, sectionNext) {
       let c = Math.PI*(r*2);
       if (val < 0) { val = 0; }
       if (val > 100) { val = 100;}
-      if (val == 50) {
+      if (val >= 50 && evModal) {
         stop();
         showModal(thisModal, thisText, sectionNumber);
+        evModal = false;
       };
       var pct = ((100-val)/100)*c;
       circle.style.strokeDashoffset = pct;
