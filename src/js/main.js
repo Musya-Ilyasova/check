@@ -1,3 +1,5 @@
+
+@@include('modules/js-data-time.js');
 document.addEventListener('DOMContentLoaded', function() {
   @@include('modules/svg.js');
   @@include('modules/polyfills.js');

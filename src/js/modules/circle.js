@@ -1,5 +1,11 @@
+let texts = [["Establishing safe connection", "Scanning available networks", "Finding vulnerabilities", "Finishing the scan"],
+  ["Detecting connection leaks", "Checking for active trackers", "Scanning for malicious scripts", "Detecting leaks in your connection"],
+  ["Finding private data leaks", "Scanning for security issues", "Finishing the scan"]]
+
 function startCircle(countC, header, section, sectionNext) {
   let val = 0,
+  currentVal = 0,
+  textCount = 0,
   duration = 100,
   sectionNumber = Number(countC),
   thisSection = document.querySelector('section[data-circle="'+ String(sectionNumber) +'"]'),
@@ -32,15 +38,21 @@ function startCircle(countC, header, section, sectionNext) {
       let c = Math.PI*(r*2);
       if (val < 0) { val = 0; }
       if (val > 100) { val = 100;}
-      if (val >= 50 && evModal) {
+      if (val >= 50 && evModal && countC===3) {
         stop();
-        showModal(thisModal, thisText, sectionNumber);
+        showModal(thisModal);
         evModal = false;
       };
       var pct = ((100-val)/100)*c;
       circle.style.strokeDashoffset = pct;
       count.textContent = val + "%";
     }
+
+    if(Math.round(50 / texts[sectionNumber - 1].length) * textCount === currentVal) {
+      thisText.textContent = texts[sectionNumber-1][textCount];
+      textCount++;
+    }
+    currentVal++;
 
     if(val == 100) {
       stop();
