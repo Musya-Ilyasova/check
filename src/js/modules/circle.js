@@ -45,7 +45,7 @@ function startCircle(countC, header, section, sectionNext) {
       };
       var pct = ((100-val)/100)*c;
       circle.style.strokeDashoffset = pct;
-      count.textContent = val + "%";
+      count.textContent = val;
     }
 
     if(Math.round(50 / texts[sectionNumber - 1].length) * textCount === currentVal) {

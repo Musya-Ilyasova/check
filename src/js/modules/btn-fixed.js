@@ -20,8 +20,8 @@ function btnFixed () {
 
 function scrollSection() {
   let btn = document.querySelector('.btn-fixed');
-  let section = document.querySelector('.eight-screen');
   let el = document.querySelector('.pay-form__wrapper');
+  let section = document.querySelector('.eight-screen');
   section.addEventListener('scroll', function() {
     if((el.getBoundingClientRect().y + el.getBoundingClientRect().height/2) <= window.screen.height) {
       btn.classList.add('hide');

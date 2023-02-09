@@ -1,6 +1,9 @@
 .modal {
   &__wrapper {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     display: none;
@@ -53,6 +56,27 @@
     }
     &:first-child {
       border-right: 1px solid rgba(91, 95, 111, 0.25);
+    }
+  }
+  &-pay {
+    .modal__title {
+      display: block;
+    }
+    .modal-btn {
+      line-height: 48px;
+    }
+    &__successfully {
+      .modal__title {
+        color: green;
+      }
+    }
+    &__error {
+      .modal__title {
+        color: #c32424;
+      }
+    }
+    .modal-btn {
+      width: 100%;
     }
   }
 }

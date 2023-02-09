@@ -1,6 +1,21 @@
 .first-screen {
   display: flex;
 }
+
+@media only screen and (max-device-height: 812px) and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 375px) and (max-device-width: 667px) {
+  .first-screen p {
+    margin-top: 0;
+  }
+  .first-screen__title {
+    margin-bottom: 20px;
+  }
+  .first-screen__mark {
+    margin-top: 30px;
+  }
+  .third-screen .container {
+    margin-top: 40px;
+  }
+}
 .second-screen {
   &:before {
     content: "";
@@ -140,6 +155,10 @@
     flex-direction: column;
     justify-content: flex-end;
   }
+  .count {
+    display: inline-block;
+    width: 40px;
+  }
 }
 
 .eight-screen {
@@ -166,6 +185,7 @@
     max-height: 100%;
   }
   &-header {
+    width: 100%;
     color: var(--eightHeader);
     position: relative;
     background: var(--main);
@@ -189,7 +209,10 @@
       background: url(../img/romb.svg);
       background-repeat: repeat-x no-repeat;
       background-size: contain;
-      animation: 60s linear infinite slidein;;
+      animation: 60s linear infinite slidein;
+      @include mq('768') {
+        animation: 180s linear infinite slidein;
+      }
     }
     &:before {
       top: -1px;
@@ -326,6 +349,7 @@
       }
       &-panel {
         display: flex;
+        justify-content: center;
         span {
           font-weight: 400;
           display: inline-block;
@@ -397,7 +421,6 @@
       content: "";
       clear: both;
       width: 100%;
-
     }
     &__wrapper {
       padding: 32px 0;

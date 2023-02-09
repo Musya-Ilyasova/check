@@ -2,18 +2,20 @@ include ../mixins/mixins
 doctype html
 html(lang="ru")
   include ../components/global/head
-  body.index
-    include ../components/global/header
-    //main
-    main
-      include ../pages/index/1-screen
-      //- include ../pages/index/2-screen
-      include ../pages/index/3-screen
-      //- include ../pages/index/4-screen
-      include ../pages/index/5-screen
-      //- include ../pages/index/6-screen
-      include ../pages/index/7-screen
-      include ../pages/index/8-screen
-    include ../components/global/footer
-    include ../components/modals/modal
-    include ../components/global/scripts
+  body
+    .index-white
+      include ../components/global/header
+      //main
+      main
+        //- include ../pages/index/1-screen
+        //- include ../pages/index/2-screen
+        include ../pages/index/3-screen
+        //- include ../pages/index/4-screen
+        include ../pages/index/5-screen
+        //- include ../pages/index/6-screen
+        include ../pages/index/7-screen
+        include ../pages/index/8-screen
+      include ../components/global/footer
+      include ../components/modals/modal
+      include ../components/modals/modal-pay
+      include ../components/global/scripts

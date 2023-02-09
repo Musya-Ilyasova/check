@@ -1,9 +1,16 @@
+function addTimerItems() {
+  window.timeItems.timeNow = new Date().getTime();
+  window.timeItems.deadline = new Date(window.timeItems.timeNow + 900000);
+};
+
+
 function timer() {
-  let timeNow = (new Date()).getTime();
-  const deadline = new Date(timeNow+900000);
+  if (!localStorage.getItem('deadline') || !localStorage.getItem('deadline') > new Date().getTime()) {
+    addTimerItems();
+  }
   let timerId = null;
   function countdownTimer() {
-    const diff = deadline - new Date();
+    const diff = window.timeItems.deadline - new Date();
     if (diff <= 0) {
       clearInterval(timerId);
     }
@@ -14,6 +21,11 @@ function timer() {
     $hours.forEach((item) => item.textContent = hours < 10 ? '0' + hours : hours);
     $minutes.forEach((item) => item.textContent = minutes < 10 ? '0' + minutes : minutes);
     $seconds.forEach((item) => item.textContent = seconds < 10 ? '0' + seconds : seconds);
+    if(hours===0 && minutes===0 && seconds===0) {
+      addTimerItems();
+      localStorage.removeItem('deadline'); 
+      localStorage.removeItem('timeNow'); 
+    }
   }
 
   const $hours = document.querySelectorAll('.hours');
@@ -21,4 +33,9 @@ function timer() {
   const $seconds = document.querySelectorAll('.seconds');
   countdownTimer();
   timerId = setInterval(countdownTimer, 1000);
+  
 }
+
+
+
+
