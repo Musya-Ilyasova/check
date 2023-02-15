@@ -66,12 +66,6 @@ document.querySelector('.eight-screen__os').innerHTML = getPlatform();
 // add current date 
 let newDate = new Date();
 
-// document.querySelector('.second-screen__year').innerHTML = newDate.getFullYear();
 
-if(newDate.getTimezoneOffset() < 0) {
-  // document.querySelector('.first-screen__timeZone').innerHTML = `GMT + ${Math.abs(newDate.getTimezoneOffset()) / 60}:00`;
-  document.querySelector('.eight-screen__timeZone').innerHTML = `GMT + ${Math.abs(newDate.getTimezoneOffset()) / 60}:00`;
-} else {
-  // document.querySelector('.first-screen__timeZone').innerHTML = `GMT - ${newDate.getTimezoneOffset() / 60}:00`;
-  document.querySelector('.eight-screen__timeZone').innerHTML = `GMT - ${newDate.getTimezoneOffset() / 60}:00`;
-}
+document.querySelector('.eight-screen__timeZone').innerHTML = newDate.toLocaleDateString(undefined, {day:'2-digit',timeZoneName: 'short' }).substring(4);
+
